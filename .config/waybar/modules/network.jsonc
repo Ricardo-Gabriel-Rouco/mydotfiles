@@ -1,0 +1,10 @@
+{
+    "network": {
+        "format": "{icon} {essid}",
+        "format-disconnected": "󰤮",
+        "tooltip-format": "IP: {ipaddr}\nGateway: {gwaddr}\n{ifname} ({signalStrength}%)",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "interval": 5,
+        "on-click": "wl-copy <<< {ipaddr}"
+    }
+}

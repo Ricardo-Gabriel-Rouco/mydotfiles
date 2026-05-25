@@ -1,0 +1,8 @@
+{
+    "custom/bandwidth": {
+        "exec": "$HOME/.config/waybar/scripts/bandwidth.sh",
+        "interval": 2,
+        "tooltip": true,
+        "return-type": "json"
+    }
+}
