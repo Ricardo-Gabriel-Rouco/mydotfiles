@@ -17,6 +17,10 @@ return {
         name = "apuntes", -- Name of the workspace
         path = "~/Proyectos/apuntes", -- Path to the notes directory
       },
+      {
+        name = "rol",
+        path = "~/Proyectos/rol/",
+      },
     },
     completion = {
       cmp = true,
