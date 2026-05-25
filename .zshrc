@@ -128,6 +128,7 @@ alias home="cd ~"
 alias desk="cd ~/Escritorio"
 alias down="cd ~/Descargas"
 alias docs="cd ~/Documentos"
+alias prog="cd ~/Documentos/programacion/"
 alias proy="cd ~/Proyectos"
 
 # Listado mejorado
