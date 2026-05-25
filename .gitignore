@@ -1,0 +1,6 @@
+.config/hypr/scripts/waybar_auto_hide
+*.bak
+*.pyc
+__pycache__
+.DS_Store
+Thumbs.db

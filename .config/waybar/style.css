@@ -1,0 +1,6 @@
+/* Modify/add style in ~/.config/waybar/styles/styles/ */
+@import "/home/omega/.local/share/waybar/styles/defaults.css";
+/* Colors and theme configuration is generated through the `theme.css` file */
+@import "theme.css";
+/* Users who want to override the current style add/edit 'user-style.css' */
+@import "user-style.css";
