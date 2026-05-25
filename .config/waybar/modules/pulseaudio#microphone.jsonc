@@ -1,0 +1,11 @@
+{
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "<span color='#00bfff'></span> {volume}%",
+    "format-source-muted": " MUTED",
+    "on-click": "pavucontrol",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
+  },
+}

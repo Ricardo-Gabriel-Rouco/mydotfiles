@@ -1,9 +1,9 @@
 {
-    "custom/power": {
-        "format": "",
-        "tooltip": true,
-        "tooltip-format": "Power menu",
-        "on-click": "wlogout",
-        "interval": 86400
-    }
+  "custom/power": {
+    "format": "<span color='#00bfff'>⏻ Power</span>",
+    "tooltip": true,
+    "tooltip-format": "Power menu",
+    "on-click": "wlogout",
+    "interval": 86400,
+  },
 }

@@ -1,0 +1,9 @@
+{
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "<span color='#00bfff'></span>",
+      "deactivated": "<span color='#00bfff'></span>",
+    },
+  },
+}

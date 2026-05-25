@@ -1,0 +1,12 @@
+{
+  "pulseaudio": {
+    "format": "<span color='#21f6bc'>{icon}</span> {volume}%",
+    "format-muted": " {volume}%",
+    "format-icons": ["", "", ""],
+    "on-click": "pavucontrol",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "tooltip-format": "{desc}",
+  },
+}
