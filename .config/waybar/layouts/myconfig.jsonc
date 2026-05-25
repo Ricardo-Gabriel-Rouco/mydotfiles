@@ -2,7 +2,7 @@
   "layer": "bottom",
   "position": "top",
   "output": ["*"],
-  "height": 10,
+  "height": 38,
   "exclusive": true,
   "passthrough": false,
   "reload_style_on_change": true,
@@ -36,14 +36,7 @@
 
   "group/pill#right1": {
     "orientation": "inherit",
-    "modules": [
-      "backlight",
-      "network",
-      "pulseaudio",
-      "pulseaudio#microphone",
-      "custom/updates",
-      "custom/keybindhint",
-    ],
+    "modules": ["backlight", "network", "pulseaudio", "pulseaudio#microphone"],
   },
   "group/pill#right2": {
     "orientation": "inherit",
@@ -51,7 +44,7 @@
   },
   "group/pill#right3": {
     "orientation": "inherit",
-    "modules": ["network", "custom/cliphist"],
+    "modules": ["custom/cliphist"],
   },
   "on-sigusr1": "hide",
   "on-sigusr2": "show",

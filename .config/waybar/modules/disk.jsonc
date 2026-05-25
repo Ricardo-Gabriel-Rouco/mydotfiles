@@ -1,0 +1,7 @@
+{
+  "disk": {
+    "interval": 30,
+    "format": "<span color='#21f6bc'></span> {used}/{total}",
+    "path": "/",
+  },
+}

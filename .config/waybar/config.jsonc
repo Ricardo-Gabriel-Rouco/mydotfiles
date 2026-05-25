@@ -21,7 +21,7 @@
   },
   "group/pill#left3": {
     "orientation": "inherit",
-    "modules": [],
+    "modules": ["disk"],
   },
   "modules-center": ["group/pill#center"],
   "group/pill#center": {
@@ -36,7 +36,13 @@
 
   "group/pill#right1": {
     "orientation": "inherit",
-    "modules": ["backlight", "custom/bandwidth", "network", "pulseaudio", "pulseaudio#microphone"],
+    "modules": [
+      "backlight",
+      "custom/bandwidth",
+      "network",
+      "pulseaudio",
+      "pulseaudio#microphone",
+    ],
   },
   "group/pill#right2": {
     "orientation": "inherit",
