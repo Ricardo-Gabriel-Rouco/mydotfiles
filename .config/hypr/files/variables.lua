@@ -1,0 +1,12 @@
+SpecialPomodoro = "special:pomodoro"
+SpecialMusica = "special:musica"
+Home = "/home/omega/"
+MainMod = "SUPER"
+ShiftMod = "SHIFT_L"
+Terminal = "ghostty"
+FileManager = "nautilus --ozone-platform=x11"
+Menu = "hyprlauncher"
+Web = "vivaldi"
+Launcher = "rofi -show drun -theme ~/.config/rofi/cyberpunk.rasi"
+Tools = [[ghostty --title="MENÚ DE HERRAMIENTAS" -e /home/omega/Documentos/programacion/personal-tools/executor.sh]]
+HyprshotDir = "$HOME/Pictures/Screenshots/"

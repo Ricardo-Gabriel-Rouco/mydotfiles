@@ -8,3 +8,6 @@ unset ZDOTDIR
 #    echo "FATAL Error: Could not source $ZDOTDIR/.zshenv"
 #    return 1
 #fi
+
+# opencode
+export PATH=/home/omega/.opencode/bin:$PATH

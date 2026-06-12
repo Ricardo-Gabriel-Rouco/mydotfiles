@@ -2,7 +2,7 @@
   "include": [
     "/home/omega/.config/waybar/modules/custom-cliphist.jsonc",
     "/home/omega/.config/waybar/modules/custom-power.jsonc",
-    "/home/omega/.config/waybar/modules/custom-network.jsonc"
+    "/home/omega/.config/waybar/modules/custom-bandwidth.jsonc"
   ],
   "image#wallpaper": {
     "size": 30,
