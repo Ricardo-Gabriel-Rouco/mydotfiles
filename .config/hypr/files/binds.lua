@@ -28,8 +28,8 @@ for i = 1, 10 do
 	hl.bind(MainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
 	hl.bind(MainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
-hl.bind(MainMod .. " + COMMA", hl.dsp.focus({ workspace = "e - 1" }))
-hl.bind(MainMod .. " + PERIOD", hl.dsp.focus({ workspace = "e + 1" }))
+hl.bind(MainMod .. " + COMMA", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(MainMod .. " + PERIOD", hl.dsp.focus({ workspace = "e+1" }))
 
 -- special workspaces --
 hl.bind(MainMod .. " + N", hl.dsp.focus({ workspace = SpecialPomodoro }))
