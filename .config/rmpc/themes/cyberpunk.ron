@@ -1,0 +1,163 @@
+#![enable(implicit_some)]
+#![enable(unwrap_newtypes)]
+#![enable(unwrap_variant_newtypes)]
+(
+    default_album_art_path: None,
+    format_tag_separator: " | ",
+    browser_column_widths: [20, 38, 42],
+    background_color: None,
+    text_color: None,
+    header_background_color: None,
+    modal_background_color: None,
+    modal_backdrop: false,
+    preview_label_style: (fg: "yellow"),
+    preview_metadata_group_style: (fg: "yellow", modifiers: "Bold"),
+    highlighted_item_style: (fg: "blue", modifiers: "Bold"),
+    current_item_style: (fg: "black", bg: "blue", modifiers: "Bold"),
+    borders_style: (fg: "blue"),
+    highlight_border_style: (fg: "blue"),
+    symbols: (
+        song: "S",
+        dir: "D",
+        playlist: "P",
+        marker: "M",
+        ellipsis: "...",
+        song_style: None,
+        dir_style: None,
+        playlist_style: None,
+    ),
+    level_styles: (
+        info: (fg: "blue", bg: "black"),
+        warn: (fg: "yellow", bg: "black"),
+        error: (fg: "red", bg: "black"),
+        debug: (fg: "light_green", bg: "black"),
+        trace: (fg: "magenta", bg: "black"),
+    ),
+    progress_bar: (
+        symbols: ["█", "█", "█", " ", "█"],
+        track_style: None,
+        elapsed_style: (fg: "blue"),
+        thumb_style: (fg: "blue"),
+        use_track_when_empty: true,
+    ),
+    scrollbar: (
+        symbols: ["│", "█", "▲", "▼"],
+        track_style: (),
+        ends_style: (),
+        thumb_style: (fg: "blue"),
+    ),
+    tab_bar: (
+        active_style: (fg: "black", bg: "blue", modifiers: "Bold"),
+        inactive_style: (),
+    ),
+    lyrics: (
+        timestamp: false
+    ),
+    browser_song_format: [
+        (
+            kind: Group([
+                (kind: Property(Track)),
+                (kind: Text(" ")),
+            ])
+        ),
+        (
+            kind: Group([
+                (kind: Property(Artist)),
+                (kind: Text(" - ")),
+                (kind: Property(Title)),
+            ]),
+            default: (kind: Property(Filename))
+        ),
+    ],
+    song_table_format: [
+        (
+            prop: (kind: Property(Artist),
+                default: (kind: Text("Unknown"))
+            ),
+            label_prop: (kind: Text("Artist")),
+            width: "20%",
+        ),
+        (
+            prop: (kind: Property(Title),
+                default: (kind: Text("Unknown"))
+            ),
+            label_prop: (kind: Text("Title")),
+            width: "35%",
+        ),
+        (
+            prop: (kind: Property(Duration),
+                default: (kind: Text("-"))
+            ),
+            label_prop: (kind: Text("Duration")),
+            width: "15%",
+            alignment: Right,
+        ),
+    ],
+    cava: (
+    // symbols that will be used to draw the bar in the visualiser, in ascending order of
+    // fill fraction
+    bar_symbols: ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'],
+    // similar to bar_symbols but these are used for the top-down rendering, meaning for orientation
+    // "Horizontal" and "Top"
+    inverted_bar_symbols: ['▔', '🮂', '🮃', '▀', '🮄', '🮅', '🮆', '█'],
+
+
+    //bg_color: "black", // background color, defaults to rmpc's bg color if not provided
+    bar_width: 1, // width of a single bar in columns
+    bar_spacing: 1, // free space between bars in columns
+
+    orientation: Bottom,
+
+    bar_color: Single("#00bfff")
+),
+    layout: Split(
+        direction: Vertical,
+        panes: [
+            (
+                size: "6",
+                pane: Split(
+                    direction: Horizontal,
+                    panes: [
+                        (
+                            size: "100%",
+                            pane: Split(
+                                direction: Vertical,
+                                panes: [
+                                    (
+                                        size: "4",
+                                        borders: "TOP | BOTTOM",
+                                        pane: Pane(Header),
+                                    ),
+                                    (
+                                        size: "2",
+                                        pane: Pane(Tabs),
+                                    ),
+                                ]
+                            )
+                        ),
+                    ]
+                ),
+            ),
+            (
+                size: "100%",
+                pane: Split(
+                    direction: Horizontal,
+                    panes: [
+                        (size: "40%", borders: "ALL", pane: Pane(AlbumArt)),
+                        (
+                            size: "100%",
+                            pane: Split(
+                                direction: Vertical,
+                                panes: [
+                                    (size: "100%", borders: "ALL", pane: Pane(TabContent)),
+                                    (size: "5", pane: Pane(Cava), borders: "BOTTOM"),
+                                    (size: "1", pane: Pane(ProgressBar)),
+                                ]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
+        ],
+    ),
+)
