@@ -10,7 +10,8 @@ scrollback-limit = 5000
 # │                                   FONT                                       │
 # └──────────────────────────────────────────────────────────────────────────────┘
 
-font-family = IosevkaTerm NF
+# ⚠️ CORREGIDO: Se agregaron comillas y se cambió a la versión Monoespaciada pura
+font-family = "IosevkaTerm NF"
 font-size = 14
 
 
@@ -19,7 +20,6 @@ font-size = 14
 # └──────────────────────────────────────────────────────────────────────────────┘
 
 background-opacity = 0.95
-background-blur-radius = 20
 
 window-decoration = true
 window-padding-color = extend
