@@ -32,9 +32,9 @@ hl.bind(MainMod .. " + COMMA", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(MainMod .. " + PERIOD", hl.dsp.focus({ workspace = "e+1" }))
 
 -- special workspaces --
-hl.bind(MainMod .. " + N", hl.dsp.focus({ workspace = SpecialPomodoro }))
+hl.bind(MainMod .. " + N", hl.dsp.workspace.toggle_special(SpecialPomodoro))
+hl.bind(MainMod .. " + M", hl.dsp.workspace.toggle_special(SpecialMusica))
 hl.bind(MainMod .. " + SHIFT + N", hl.dsp.window.move({ workspace = SpecialPomodoro }))
-hl.bind(MainMod .. " + M", hl.dsp.focus({ workspace = SpecialMusica }))
 hl.bind(MainMod .. " + SHIFT + M", hl.dsp.window.move({ workspace = SpecialMusica }))
 
 -- move windows and resize keybinds --

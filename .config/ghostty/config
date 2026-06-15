@@ -11,9 +11,8 @@ scrollback-limit = 5000
 # └──────────────────────────────────────────────────────────────────────────────┘
 
 # ⚠️ CORREGIDO: Se agregaron comillas y se cambió a la versión Monoespaciada pura
-font-family = "IosevkaTerm NF"
+font-family = "Iosevka Nerd Font"
 font-size = 14
-
 
 # ┌──────────────────────────────────────────────────────────────────────────────┐
 # │                                  WINDOW                                      │
